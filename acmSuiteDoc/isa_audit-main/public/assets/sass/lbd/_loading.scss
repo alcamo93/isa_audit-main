@@ -1,0 +1,70 @@
+.loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.img-loading {
+    position: fixed;
+    width: 10vw;
+    top: 40vh;
+    left: 45vw;
+}
+
+.img-loading-pp {
+    width: 10vw;
+}
+
+.opacity-background
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.toggle-seccion
+{
+    margin-bottom: 5px!important;
+}
+
+.toggle-seccion > .card-body 
+{
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
+}
+
+.toggle-seccion > .card-body > button
+{
+    margin-bottom: 0px!important;
+}
+
+.toggle-seccion > .card-body > h6
+{
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+    padding-top: 10px!important;
+}
+
+.loader {
+    border: 16px solid #ffffff30; /* Light grey */
+    border-top: 16px solid #a9a9a9; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

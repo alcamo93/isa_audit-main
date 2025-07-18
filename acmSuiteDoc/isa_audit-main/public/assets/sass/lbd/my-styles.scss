@@ -1,0 +1,277 @@
+/*           My styles      */
+
+/* style scrollbar width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $dark-gray;
+}
+
+.main-panel ::-webkit-scrollbar-thumb {
+    background: rgb(108, 117, 125);
+    border-radius: 5px;
+}
+/*           Content        */
+
+.element-hide {
+    display: none;
+    /*transition: opacity 1s ease-out;
+    opacity: 0;*/
+}
+
+.card-header.card-header-title-info {
+    font-family: $font-bold;
+    span {
+        font-size: large;
+        color: $new-dark-blue;
+        font-weight: 700;
+    }
+    button {
+        font-family: $body-font;
+    }
+}
+
+.icon-color-orange {
+    color: $new-orange;
+}
+.icon-color-purple {
+    color: #9800FB;
+}
+.icon-color-aqua {
+    color: #00FBB3;
+}
+.icon-color-green {
+    color: $color-green;
+}
+.icon-color-azure {
+    color: $color-azure;
+}
+.icon-color-blue {
+    color: $new-dark-blue;
+}
+.icon-color-red {
+    color: $color-red;
+}
+.icon-color-rose {
+    color: #ff0062;
+}
+.icon-color-yellow {
+    color: #dae500;
+}
+.icon-color-fluorescent {
+    color: #00ff1e;
+}
+.my-cursor {
+    cursor: pointer !important;
+}
+.popover  {
+    background: rgba(0, 0, 0, 0.9)!important;
+}
+.popover.bottom .arrow:after {
+    border-bottom-color:rgba(0, 0, 0, 0.9)!important;
+}
+.popover-header {
+    background: none;//rgba(0, 0, 0)!important;
+    color: $white-color;
+    margin-top: 0;
+    font-family: $font-bold!important;
+}
+.popover-body{
+    color: $white-color;
+    font-family: $body-font!important;
+}
+.popover.bs-popover-right .arrow::after {
+    border-right-color: rgba(0, 0, 0, 0.9)!important;
+}
+
+.font-size-popover {
+    font-size: 13px !important;
+}
+/* graphics */
+.first-icon {
+    content: url(../img/services/s2.png);
+    width: 100%;
+}
+
+.second-icon {
+    content: url(../img/services/s1.png);
+    width: 100%;
+}
+
+.third-icon {
+    content: url(../img/services/s3.png);
+    width: 100%;
+}
+
+.fourth-icon {
+    content: url(../img/services/s8.png);
+    width: 100%;
+}
+
+.image-matter {
+    max-width: 5.25rem;
+    object-fit:contain;
+}
+
+.close.my-close{
+    float: left !important;
+}
+
+.modal-header{
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.modal-footer{
+    border-top: 1px solid #ffffff !important;
+}
+
+.img-preview {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.border-logos{
+    border-style: solid;
+    border-color: $dark-gray;
+    border-width: thin;
+    background-color: #f2f2f2;
+}
+
+.form-check-radio.my-radio{
+    display: inline-grid;
+}
+
+select.my-option {
+    width: fit-content;
+}
+
+.border-r-5 {
+    border-radius: 5px !important;
+}
+
+.border-r-10 {
+    border-radius: 10px !important;
+}
+
+.border-r-15 {
+    border-radius: 15px !important;
+}
+
+.border-r-20 {
+    border-radius: 20px !important;
+}
+
+.border-r-25 {
+    border-radius: 25px !important;
+
+    .card-header{
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 25px !important;
+    }
+}
+
+.my-weight {
+    font-weight: 900;
+    font-size: 3.25rem;
+    margin: 0px 0 15px;
+}
+
+.my-weight-second {
+    font-weight: 900;
+    font-size: 3.25rem;
+}
+
+.my-margin {
+    margin: 0px 0 15px;
+}
+
+hr.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid whitesmoke;
+}
+
+
+
+@media (min-width: 576px) { // Small devices (landscape phones, 576px and up)
+  .carousel-caption h3 { font-size: 1.3em;}
+  .carousel-caption p {font-size: 1.1em;}  
+}
+@media (min-width: 768px) {// Medium devices (tablets, 768px and up)
+  .carousel-caption h3 { font-size: 1.4em;}
+  .carousel-caption p {font-size: 1.2em;}  
+}
+@media (min-width: 992px) { // Large devices (desktops, 992px and up)
+  .carousel-caption h3 { font-size: 1.5em;}
+  .carousel-caption p {font-size: 1.3em;}  
+}
+@media (min-width: 1200px) { // Extra large devices (large desktops, 1200px and up)
+  .carousel-caption h3 { font-size: 1.6em;}
+  .carousel-caption p {font-size: 1.4em;}  
+}
+
+@media (max-width: 560px) {
+    .carousel-caption h1 {
+      font-size: 300%;
+    }
+    .carousel-caption h3 {
+      font-size: 100%;
+    }
+}
+  
+@media (max-width: 400px) {
+    .carousel-caption h1 {
+      font-size: 200%;
+    }
+    .carousel-caption h3 {
+      font-size: 80%;
+    }
+}
+
+.go-to-process {
+    &:hover {
+        text-decoration: underline !important; 
+    }
+}
+
+.cursor-help-title {
+    cursor: help;
+}
+
+.form-check.align-check {
+    padding-left: unset !important;
+    .form-check-label{
+        padding-left: 27px !important;
+    }
+}
+
+.sidebar .logo #minimizeSidebar .icon {
+    width: 30px;
+    height: 34px;
+    overflow: hidden;
+    font-size: 25px;
+    margin-left: 28px;
+    margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini #txtCloseMenu {
+        display: none !important;
+    }
+}

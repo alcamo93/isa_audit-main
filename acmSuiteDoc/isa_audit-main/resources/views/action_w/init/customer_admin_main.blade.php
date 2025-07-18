@@ -1,0 +1,41 @@
+@extends('theme.master')
+@section('view')
+    <div class="view contracts">
+        @include('action_w.contracts.customer_admin_contracts')
+    </div>
+    <div class="view action d-none">
+        @include('action_w.requirements.action_table')
+    </div>
+    <div class="view control d-none">
+        @include('action_w.panel.panel')
+    </div>
+    @include('components.loading')
+    @include('action_w.components.showText')
+    @include('action_w.requirements.users')
+    @include('action_w.requirements.expired_modal')
+    @include('action_w.tasks.tasks_crud')
+    @include('action_w.tasks.file_modal')
+    @include('action_w.tasks.comment_modal')
+@endsection
+@section('javascript')
+@parent
+@include('components.components_js')
+@include('components.toggle.toggle_js')
+@include('components.validate_js')
+@include('components.get_corporates_js')
+@include('action_w.config_permissions')
+@include('action_w.services_js')
+@include('action_w.contracts.contracts_js')
+@include('action_w.components.usersAssigned_js')
+@include('action_w.components.showText_js')
+@include('action_w.requirements.users_js')
+@include('action_w.requirements.action_filters_js')
+@include('action_w.requirements.action_table_js')
+@include('action_w.requirements.expired_table_js')
+@include('action_w.requirements.expired_modal_js')
+@include('action_w.panel.panel_js')
+@include('action_w.tasks.tasks_js')
+@include('action_w.tasks.tasks_crud_js')
+@include('action_w.tasks.file_modal_js')
+@include('action_w.tasks.comment_modal_js')
+@endsection

@@ -1,0 +1,20 @@
+@extends('theme.master')
+@section('view')
+    @include('dashboard.owner.owner_header')
+    @include('dashboard.initGraph.graph_view')
+    @include('dashboard.initGraph.graph_modal')
+    @include('components.loading')
+@endsection
+@section('javascript')
+@parent
+@include('components.components_js')
+@include('dashboard.dashboard_js')
+@include('dashboard.initGraph.matter_aspects_js')
+@include('dashboard.initGraph.relevant_permissions_js')
+@include('dashboard.initGraph.risk_radar_js')
+@include('dashboard.initGraph.findings_js')
+@include('dashboard.initGraph.critical_findings_js')
+@include('dashboard.initGraph.no_compliace_js')
+@include('dashboard.initGraph.risk_bars_js')
+@include('dashboard.initGraph.advance_pie_js')
+@endsection

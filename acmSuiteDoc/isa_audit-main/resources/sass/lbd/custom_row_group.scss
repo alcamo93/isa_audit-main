@@ -1,0 +1,23 @@
+.group-table tr.row-group {
+  &.row-level-0 td {
+    font-weight: bold !important;
+    text-align: center!important;
+  }
+  td {
+    background-color: #e0e0e0 !important;
+  }
+  &.row-level-1 td,
+  &.row-level-2 td,
+  &.row-level-3 td,
+  &.row-level-4 td,
+  &.row-level-5 td {
+    background-color: #3a72a0 !important;
+    padding-top: 0.25em !important;
+    padding-bottom: 0.25em !important;
+    padding-left: 2em !important;
+    font-size: 0.9em !important;
+    color: white;
+    font-weight: bold !important;
+    text-align: center!important;
+  }
+}

@@ -1,0 +1,36 @@
+$body-font: 'Graphik', Arial,sans-serif;
+$font-bold: 'Graphik-Medium', Arial,sans-serif;
+
+.popover  {
+  background: rgba(0, 0, 0, 0.9)!important;
+}
+.popover.bottom .arrow:after {
+  border-bottom-color:rgba(0, 0, 0, 0.9)!important;
+}
+.popover-header {
+  background: none;//rgba(0, 0, 0)!important;
+  color: #FFFFFF;
+  margin-top: 0;
+  font-family: $font-bold!important;
+}
+.popover-body{
+  color: #FFFFFF;
+  font-family: $body-font!important;
+}
+.popover.bs-popover-right .arrow::after {
+  border-right-color: rgba(0, 0, 0, 0.9)!important;
+}
+
+.font-size-popover {
+  font-size: 13px !important;
+}
+
+.popover-header {
+  background: none !important;
+  color: #FFFFFF !important;
+}
+
+.popover-body {
+  background: none !important;
+  color: #FFFFFF !important;
+}
